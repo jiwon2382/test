@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deepfake Filter Platform</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Deepfake Filter</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#upload">Upload</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Banner -->
+    <section class="jumbotron text-center bg-primary text-white">
+        <div class="container">
+            <h1 class="display-4">Welcome to the Deepfake Filter Platform</h1>
+            <p class="lead">Your ultimate tool to detect and block deepfake content. Secure your digital world.</p>
+            <a href="#features" class="btn btn-light btn-lg">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>We are dedicated to developing cutting-edge solutions to detect and prevent the misuse of deepfake technology. Our AI-powered platform enables users to upload and analyze videos, ensuring that fake content doesn't spread.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="AI Illustration" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Platform Features</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-brain fa-3x mb-3"></i>
+                    <h4>AI-Powered Detection</h4>
+                    <p>Our system uses advanced AI models to detect deepfake content in real time.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-lock fa-3x mb-3"></i>
+                    <h4>Secure & Private</h4>
+                    <p>We prioritize your security and privacy in every step of the process.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-upload fa-3x mb-3"></i>
+                    <h4>Easy Upload</h4>
+                    <p>Simply upload your media files, and let our platform analyze them for you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload" class="container py-5">
+        <h2 class="text-center mb-4">Upload Your Media</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" class="form-control-file" id="file" name="file">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Upload File</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Deepfake Filter Platform. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
